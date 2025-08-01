@@ -14,6 +14,8 @@ public class Todo {
     private boolean completed;
     private int priority;
 
+    public Todo(){}
+
     public Long getId() {
         return id;
     }
