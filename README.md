@@ -3,11 +3,10 @@
 Praticando API's Rest com o tema de gerenciamento de tarefas.
 
 ### Tecnologias
+- [MySQL](https://dev.mysql.com/downloads/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
 - [SpringDoc OpenAPI](https://springdoc.org/#getting-started)
-- [MySQL](https://dev.mysql.com/downloads/)
-- Swagger 
   - Acesso disponível em: [localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ### Endpoints
