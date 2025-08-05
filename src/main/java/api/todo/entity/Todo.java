@@ -1,4 +1,4 @@
-package api.todo.entities;
+package api.todo.entity;
 
 import jakarta.persistence.*;
 

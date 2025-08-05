@@ -1,7 +1,7 @@
-package api.todo.services;
+package api.todo.service;
 
-import api.todo.entities.Todo;
-import api.todo.repositories.TodoRepository;
+import api.todo.entity.Todo;
+import api.todo.repository.TodoRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

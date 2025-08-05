@@ -1,7 +1,7 @@
-package api.todo.controllers;
+package api.todo.controller;
 
-import api.todo.entities.Todo;
-import api.todo.services.TodoService;
+import api.todo.entity.Todo;
+import api.todo.service.TodoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
