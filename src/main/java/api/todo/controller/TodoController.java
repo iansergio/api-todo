@@ -9,7 +9,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/todos")
+@RequestMapping("/api/todos")
 public class TodoController {
 
     private final TodoService todoService;
@@ -21,13 +21,13 @@ public class TodoController {
     @PostMapping
     public ResponseEntity<Todo> insertTodo(@RequestBody Todo todo) {
         Todo savedTodo = todoService.insertTodo(todo);
-        URI location = URI.create("/todos/" + savedTodo.getId());
+        URI location = URI.create("/api/todos/" + savedTodo.getId());
         return ResponseEntity.created(location).body(savedTodo);
     }
 
     @GetMapping
-    public ResponseEntity<List<Todo>> getAllTodos() {
-        return ResponseEntity.ok(todoService.getAllTodos());
+    public ResponseEntity<List<Todo>> getTodos() {
+        return ResponseEntity.ok(todoService.getTodos());
     }
 
     @GetMapping("/{id}")

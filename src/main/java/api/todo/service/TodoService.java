@@ -18,13 +18,13 @@ public class TodoService {
     }
 
     public Todo insertTodo(Todo todo) {
-        if (todo.getId() != null && todoRepository.existsById(todo.getId())) {
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "Todo already exists");
+        if (todo.getId() != null) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "New todo must not have an id");
         }
         return todoRepository.save(todo);
     }
 
-    public List<Todo> getAllTodos() {
+    public List<Todo> getTodos() {
         return todoRepository.findAll();
     }
 
